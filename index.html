@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SwiftUI + Agentic AI Roadmap</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__content">
+      <p class="eyebrow">30-Day Career Acceleration Plan</p>
+      <h1 id="course-title">SwiftUI + Agentic AI Roadmap</h1>
+      <p id="course-subtitle" class="subtitle">Loading roadmap...</p>
+      <div id="hero-tags" class="tag-row"></div>
+    </div>
+  </header>
+
+  <nav class="top-nav" aria-label="Roadmap navigation">
+    <a href="#strategy">Strategy</a>
+    <a href="#tracks">Tracks</a>
+    <a href="#project">Project</a>
+    <a href="#roadmap">30 Days</a>
+    <a href="#questions">Questions</a>
+    <a href="#resources">Resources</a>
+  </nav>
+
+  <main>
+    <section id="strategy" class="section card">
+      <h2>Strategy</h2>
+      <div id="strategy-content"></div>
+    </section>
+
+    <section id="tracks" class="section">
+      <h2>Learning Tracks</h2>
+      <div id="tracks-grid" class="grid"></div>
+    </section>
+
+    <section id="project" class="section card accent-card">
+      <h2>Portfolio Project</h2>
+      <div id="project-content"></div>
+    </section>
+
+    <section id="roadmap" class="section">
+      <div class="section-heading">
+        <div>
+          <h2>30-Day Roadmap</h2>
+          <p>Each day balances iOS depth, AI exposure, DSA practice, and a concrete deliverable.</p>
+        </div>
+        <button id="expand-all" type="button">Expand All</button>
+      </div>
+      <div id="roadmap-list"></div>
+    </section>
+
+    <section id="questions" class="section card">
+      <h2>Interview Question Bank</h2>
+      <div id="questions-content" class="question-grid"></div>
+    </section>
+
+    <section id="resources" class="section card">
+      <h2>Resources & Usage</h2>
+      <div id="resources-content"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built as a living roadmap. Update <code>data/crash-course.json</code> to change the content.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
