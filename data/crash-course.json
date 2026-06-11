@@ -1,0 +1,452 @@
+{
+  "title": "SwiftUI + Agentic AI Roadmap",
+  "subtitle": "A focused 30-day crash course for iOS engineers preparing SwiftUI, architecture, DSA, LLMs, RAG, and agentic AI with a practical SwiftMigrate Agent project.",
+  "tags": [
+    { "label": "SwiftUI", "type": "ios" },
+    { "label": "iOS Architecture", "type": "ios" },
+    { "label": "DSA", "type": "dsa" },
+    { "label": "LLMs", "type": "ai" },
+    { "label": "RAG", "type": "ai" },
+    { "label": "Agentic AI", "type": "ai" }
+  ],
+  "strategy": {
+    "summary": "The fastest smart path is not to abandon iOS immediately. Use your iOS experience as leverage, strengthen SwiftUI and architecture, add pattern-based DSA, and build one AI-assisted migration project that proves applied LLM/RAG/agent knowledge.",
+    "points": [
+      "Primary identity: Senior iOS / SwiftUI Engineer.",
+      "Differentiator: LLM/RAG/agentic tooling for UIKit to SwiftUI modernization.",
+      "Daily split: 50% iOS architecture, 25% DSA, 25% AI project.",
+      "Target outcome: interview readiness plus SwiftMigrate Agent V1.",
+      "Apply by Day 30 instead of waiting to feel perfect."
+    ]
+  },
+  "tracks": [
+    {
+      "title": "Track A — iOS / SwiftUI / Architecture",
+      "type": "ios",
+      "summary": "Senior-level iOS revision focused on migration, clean architecture, async/await, SwiftUI state, navigation, API layers, and testing.",
+      "tags": [
+        { "label": "Swift", "type": "ios" },
+        { "label": "SwiftUI", "type": "ios" },
+        { "label": "MVVM", "type": "ios" },
+        { "label": "Testing", "type": "ios" }
+      ],
+      "points": [
+        "Convert UIKit thinking into SwiftUI state-driven architecture.",
+        "Practice MVVM, Service, Repository, UseCase, and Dependency Injection.",
+        "Prepare modernization stories for interviews."
+      ]
+    },
+    {
+      "title": "Track B — LLM / RAG / Agents",
+      "type": "ai",
+      "summary": "Applied AI engineering through one useful project instead of random tutorials.",
+      "tags": [
+        { "label": "LLM", "type": "ai" },
+        { "label": "Tokens", "type": "ai" },
+        { "label": "RAG", "type": "ai" },
+        { "label": "LangChain", "type": "ai" }
+      ],
+      "points": [
+        "Start with prompts and structured outputs.",
+        "Add file reading and local Swift code analysis.",
+        "Add RAG using your own architecture notes.",
+        "Add basic tool-based agent workflow."
+      ]
+    },
+    {
+      "title": "Track C — DSA",
+      "type": "dsa",
+      "summary": "Pattern-based DSA to clear product, startup, and GCC interview filters without wasting months.",
+      "tags": [
+        { "label": "Arrays", "type": "dsa" },
+        { "label": "HashMap", "type": "dsa" },
+        { "label": "Sliding Window", "type": "dsa" },
+        { "label": "Trees", "type": "dsa" }
+      ],
+      "points": [
+        "Solve 40–60 high-quality problems.",
+        "Always explain brute force, optimized approach, time complexity, and edge cases.",
+        "Use AI to debug, not to blindly copy."
+      ]
+    }
+  ],
+  "project": {
+    "name": "SwiftMigrate Agent V1",
+    "summary": "A local AI-assisted tool that reads a UIKit Swift file and generates a structured migration report for SwiftUI, MVVM, async/await, and architecture improvements.",
+    "capabilities": [
+      "Read a UIViewController.swift file from local path.",
+      "Detect UIKit patterns like IBOutlet, IBAction, delegates, navigation, table reloads, and completion handlers.",
+      "Detect memory risks such as closure retain cycles.",
+      "Generate MigrationReport.md with architecture issues and SwiftUI migration suggestions.",
+      "Recommend View, ViewModel, Service, Repository, and route structure."
+    ],
+    "stretchGoals": [
+      "Generate draft SwiftUI View and ViewModel files.",
+      "Parse storyboard XML for outlets/actions.",
+      "Use RAG with architecture_notes.md.",
+      "Add LangGraph workflow: read → analyze → retrieve → report."
+    ],
+    "resumeLine": "Built an AI-assisted UIKit to SwiftUI migration analyzer using Python, LangChain, structured LLM prompting, static Swift pattern detection, and RAG-based architecture guidance."
+  },
+  "days": [
+    {
+      "day": 1,
+      "title": "Swift Value/Reference + LLM Basics",
+      "tags": [{ "label": "Swift", "type": "ios" }, { "label": "LLM", "type": "ai" }],
+      "ios": ["struct vs class", "value vs reference semantics", "why SwiftUI views are structs"],
+      "ai": ["what is an LLM", "tokens and context", "why cost depends on input and output tokens"],
+      "dsa": ["arrays", "find max/min", "two sum brute force"],
+      "exercises": ["write struct/class mutation examples", "explain tokens in five lines", "solve two array problems"],
+      "deliverable": "Day-01 notes with Swift value/reference examples and LLM/token summary."
+    },
+    {
+      "day": 2,
+      "title": "ARC, Retain Cycles, Weak/Unowned",
+      "tags": [{ "label": "ARC", "type": "ios" }, { "label": "Prompting", "type": "ai" }],
+      "ios": ["ARC", "retain cycles", "weak vs unowned", "closure capture risks"],
+      "ai": ["prompt AI to detect Swift memory leaks", "ask for fix plus interview explanation"],
+      "dsa": ["hashmap", "two sum optimized", "frequency counter"],
+      "exercises": ["create and fix a retain cycle", "review Swift closure code with AI", "solve two hashmap problems"],
+      "deliverable": "Memory-risk checklist for Swift closures and delegates."
+    },
+    {
+      "day": 3,
+      "title": "Closures, Delegates, Protocols, DI",
+      "tags": [{ "label": "DI", "type": "ios" }],
+      "ios": ["escaping vs non-escaping closures", "delegates", "protocols", "dependency injection"],
+      "ai": ["prompt to detect delegates and closure migration opportunities"],
+      "dsa": ["strings", "palindrome", "first non-repeating character"],
+      "exercises": ["build protocol-based service", "inject mock into ViewModel", "convert delegate callback to closure action"],
+      "deliverable": "Small protocol + ViewModel + mock example."
+    },
+    {
+      "day": 4,
+      "title": "async/await, Task, MainActor",
+      "tags": [{ "label": "Concurrency", "type": "ios" }],
+      "ios": ["async/await", "Task", "SwiftUI .task", "@MainActor ViewModel"],
+      "ai": ["prompt AI to convert completion-handler API to async/await"],
+      "dsa": ["two pointers", "sorted two sum", "remove duplicates"],
+      "exercises": ["build mock async service", "update @Published state on MainActor", "solve two two-pointer problems"],
+      "deliverable": "Async service + MainActor ViewModel sample."
+    },
+    {
+      "day": 5,
+      "title": "SwiftUI State Management",
+      "tags": [{ "label": "SwiftUI", "type": "ios" }],
+      "ios": ["@State", "@Binding", "@StateObject", "@ObservedObject", "@EnvironmentObject"],
+      "ai": ["prompt AI to classify UIKit state into SwiftUI wrappers"],
+      "dsa": ["sliding window intro", "max sum subarray", "longest substring basics"],
+      "exercises": ["build room control screen", "create state-wrapper decision table", "solve two sliding-window problems"],
+      "deliverable": "SwiftUI state wrapper cheat sheet."
+    },
+    {
+      "day": 6,
+      "title": "NavigationStack + Routing",
+      "tags": [{ "label": "Navigation", "type": "ios" }],
+      "ios": ["NavigationStack", "route enums", "sheet", "fullScreenCover", "alert", "dismiss"],
+      "ai": ["prompt AI to map UIKit navigation to SwiftUI navigation"],
+      "dsa": ["stack", "valid parentheses", "next greater element intro"],
+      "exercises": ["build hotel room route flow", "map push/present/alert to SwiftUI", "solve two stack problems"],
+      "deliverable": "NavigationStack demo with route enum."
+    },
+    {
+      "day": 7,
+      "title": "MVVM + Clean Architecture Basics",
+      "tags": [{ "label": "Architecture", "type": "ios" }],
+      "ios": ["MVVM", "Service", "Repository", "UseCase", "Dependency Injection", "migration explanation"],
+      "ai": ["prompt AI to detect massive ViewController architecture issues"],
+      "dsa": ["week 1 review", "timed three-problem set"],
+      "exercises": ["build ServiceRequest MVVM skeleton", "write modernization interview answer", "review weak DSA patterns"],
+      "deliverable": "ServiceRequest architecture skeleton plus interview answer."
+    },
+    {
+      "day": 8,
+      "title": "Unit Testing + Mocking ViewModels",
+      "tags": [{ "label": "Testing", "type": "ios" }],
+      "ios": ["XCTest/Swift Testing basics", "mock services", "test loading/success/error states"],
+      "ai": ["AI-generated unit test prompt", "review generated tests for correctness"],
+      "dsa": ["binary search basics"],
+      "exercises": ["test one ViewModel with mock service", "write Arrange-Act-Assert notes"],
+      "deliverable": "One tested ViewModel."
+    },
+    {
+      "day": 9,
+      "title": "API Layer, URLSession, Codable, Errors",
+      "tags": [{ "label": "Networking", "type": "ios" }],
+      "ios": ["APIClientProtocol", "Endpoint", "Codable DTOs", "typed API errors"],
+      "ai": ["structured output JSON for code analysis"],
+      "dsa": ["sorting", "interval intro"],
+      "exercises": ["build generic APIClient skeleton", "create APIError enum"],
+      "deliverable": "Generic APIClient plus error model."
+    },
+    {
+      "day": 10,
+      "title": "Token Refresh + Retry Architecture",
+      "tags": [{ "label": "Auth", "type": "ios" }],
+      "ios": ["access token", "refresh token", "retry once", "auth repository", "request interceptor idea"],
+      "ai": ["prompt AI to detect auth/token risks"],
+      "dsa": ["queue", "BFS basics"],
+      "exercises": ["draw token refresh flow", "write AuthTokenProvider protocol"],
+      "deliverable": "Token refresh architecture diagram and protocols."
+    },
+    {
+      "day": 11,
+      "title": "SwiftUI Performance + Identity",
+      "tags": [{ "label": "Performance", "type": "ios" }],
+      "ios": ["body recalculation", "ForEach identity", "LazyVStack", "image loading", "view decomposition"],
+      "ai": ["prompt AI to detect SwiftUI performance issues"],
+      "dsa": ["linked list basics"],
+      "exercises": ["review one SwiftUI screen for identity/performance issues"],
+      "deliverable": "SwiftUI performance checklist."
+    },
+    {
+      "day": 12,
+      "title": "iOS System Design + Agent Architecture",
+      "tags": [{ "label": "System Design", "type": "ios" }, { "label": "Agent", "type": "ai" }],
+      "ios": ["design hotel room controls app", "modules", "state sync", "offline/error states"],
+      "ai": ["design SwiftMigrate Agent architecture", "tool list", "folder structure"],
+      "dsa": ["tree traversal basics"],
+      "exercises": ["write system design outline", "create agent repo structure"],
+      "deliverable": "SwiftMigrate Agent folder structure and README outline."
+    },
+    {
+      "day": 13,
+      "title": "Agent File Reading + Static Checks",
+      "tags": [{ "label": "Agent", "type": "ai" }],
+      "ios": ["mock interview: Swift + SwiftUI + architecture"],
+      "ai": ["implement read_file", "detect UIKit keywords", "detect completion handlers"],
+      "dsa": ["timed mixed set"],
+      "exercises": ["run agent on one sample Swift file"],
+      "deliverable": "Agent reads one Swift file locally."
+    },
+    {
+      "day": 14,
+      "title": "First MigrationReport.md",
+      "tags": [{ "label": "Milestone", "type": "ai" }],
+      "ios": ["week 2 revision"],
+      "ai": ["generate first MigrationReport.md", "write report to generated folder"],
+      "dsa": ["review weak DSA patterns"],
+      "exercises": ["run full V0.1 flow", "commit output sample"],
+      "deliverable": "SwiftMigrate Agent V0.1."
+    },
+    {
+      "day": 15,
+      "title": "Reusable Components + LLM App Architecture",
+      "tags": [{ "label": "Components", "type": "ios" }, { "label": "LLM App", "type": "ai" }],
+      "ios": ["SwiftUI reusable components", "design-system thinking"],
+      "ai": ["LLM app architecture", "prompt builder", "parser", "validation"],
+      "dsa": ["sliding window medium"],
+      "exercises": ["extract reusable card/button components", "create PromptBuilder module"],
+      "deliverable": "PromptBuilder plus component notes."
+    },
+    {
+      "day": 16,
+      "title": "UIKit-SwiftUI Interop + Structured Output",
+      "tags": [{ "label": "Interop", "type": "ios" }, { "label": "Structured Output", "type": "ai" }],
+      "ios": ["UIHostingController", "UIViewRepresentable", "migration bridge strategy"],
+      "ai": ["PromptTemplate", "OutputParser", "JSON migration schema"],
+      "dsa": ["hashmap medium"],
+      "exercises": ["create structured migration output", "validate missing fields"],
+      "deliverable": "JSON migration report schema."
+    },
+    {
+      "day": 17,
+      "title": "RAG Basics",
+      "tags": [{ "label": "RAG", "type": "ai" }],
+      "ios": ["migration checklist: UI, state, networking, navigation, testing"],
+      "ai": ["what is RAG", "chunking", "embeddings", "retrieval", "why not send full project"],
+      "dsa": ["binary search medium"],
+      "exercises": ["create architecture_notes.md", "write retrieval rules"],
+      "deliverable": "Architecture notes file for RAG."
+    },
+    {
+      "day": 18,
+      "title": "Local Retriever Mini Prototype",
+      "tags": [{ "label": "RAG", "type": "ai" }],
+      "ios": ["offline-first service request design"],
+      "ai": ["simple local retrieval", "keyword/chunk search", "context injection"],
+      "dsa": ["trees DFS/BFS"],
+      "exercises": ["retrieve relevant architecture rule before LLM call"],
+      "deliverable": "Tiny retriever from notes."
+    },
+    {
+      "day": 19,
+      "title": "RAG-Powered Migration Prompt",
+      "tags": [{ "label": "RAG", "type": "ai" }, { "label": "Combine", "type": "ios" }],
+      "ios": ["Combine basics", "sink", "cancellables", "retain cycle risks"],
+      "ai": ["add RAG context to migration prompt", "compare answer with/without RAG"],
+      "dsa": ["recursion basics"],
+      "exercises": ["run migration prompt with retrieved rules"],
+      "deliverable": "RAG-powered migration answer."
+    },
+    {
+      "day": 20,
+      "title": "Evaluate AI Output",
+      "tags": [{ "label": "Evaluation", "type": "ai" }],
+      "ios": ["mock interview: SwiftUI + concurrency"],
+      "ai": ["hallucination checks", "missing context", "validation checklist"],
+      "dsa": ["timed mixed set"],
+      "exercises": ["review one AI-generated migration for mistakes"],
+      "deliverable": "RAG limitations and validation notes."
+    },
+    {
+      "day": 21,
+      "title": "SwiftMigrate Agent V0.5",
+      "tags": [{ "label": "Milestone", "type": "ai" }],
+      "ios": ["revision and cleanup"],
+      "ai": ["file reading", "RAG", "structured report", "GitHub-ready sample output"],
+      "dsa": ["review weak areas"],
+      "exercises": ["commit screenshots/report sample", "write README usage"],
+      "deliverable": "SwiftMigrate Agent V0.5."
+    },
+    {
+      "day": 22,
+      "title": "Agent vs Workflow",
+      "tags": [{ "label": "Agentic AI", "type": "ai" }],
+      "ios": ["senior iOS architecture story preparation"],
+      "ai": ["agent vs prompt", "tools", "planner/executor", "workflow boundaries"],
+      "dsa": ["graph basics"],
+      "exercises": ["define agent tool list", "write agent responsibility boundaries"],
+      "deliverable": "Agent tool list."
+    },
+    {
+      "day": 23,
+      "title": "Static Swift Check Tools",
+      "tags": [{ "label": "Agent Tools", "type": "ai" }],
+      "ios": ["crash logs", "debugging", "Instruments basics"],
+      "ai": ["detect_uikit_patterns", "detect_iboutlets", "detect_navigation_patterns"],
+      "dsa": ["BFS/DFS graph intro"],
+      "exercises": ["implement two static check functions"],
+      "deliverable": "Static Swift check tools."
+    },
+    {
+      "day": 24,
+      "title": "LangGraph Intro + Workflow Sketch",
+      "tags": [{ "label": "LangGraph", "type": "ai" }],
+      "ios": ["system design: AI-assisted migration platform"],
+      "ai": ["nodes", "edges", "state", "read → analyze → retrieve → report"],
+      "dsa": ["mixed medium"],
+      "exercises": ["draw migration workflow graph", "write node responsibilities"],
+      "deliverable": "Migration workflow graph sketch."
+    },
+    {
+      "day": 25,
+      "title": "Agent Workflow V1",
+      "tags": [{ "label": "Agentic AI", "type": "ai" }],
+      "ios": ["mock interview: system design + architecture"],
+      "ai": ["read file", "static analyze", "retrieve context", "generate report"],
+      "dsa": ["timed two-problem set"],
+      "exercises": ["connect the main agent workflow"],
+      "deliverable": "SwiftMigrate Agent V1 workflow."
+    },
+    {
+      "day": 26,
+      "title": "Generate Draft SwiftUI Files",
+      "tags": [{ "label": "Code Generation", "type": "ai" }],
+      "ios": ["resume bullets and project storytelling"],
+      "ai": ["generate draft SwiftUI View", "generate draft ViewModel", "mark output as review-required"],
+      "dsa": ["weak pattern revision"],
+      "exercises": ["generate files for one sample input", "review manually"],
+      "deliverable": "Draft SwiftUI files generated."
+    },
+    {
+      "day": 27,
+      "title": "Behavioral Stories + Agent Validation",
+      "tags": [{ "label": "Interview", "type": "ios" }],
+      "ios": ["ownership story", "conflict story", "modernization story", "AI adoption story"],
+      "ai": ["agent validation checklist", "risks of generated code", "human review process"],
+      "dsa": ["mock DSA interview"],
+      "exercises": ["write STAR stories", "prepare AI project demo explanation"],
+      "deliverable": "Final README draft and behavioral stories."
+    },
+    {
+      "day": 28,
+      "title": "Full Mock + Demo Prep",
+      "tags": [{ "label": "Mock", "type": "ios" }],
+      "ios": ["full iOS mock interview"],
+      "ai": ["project demo screenshots", "two-minute demo script"],
+      "dsa": ["complexity revision"],
+      "exercises": ["record or rehearse demo", "fix README gaps"],
+      "deliverable": "Demo-ready project."
+    },
+    {
+      "day": 29,
+      "title": "Applications + LinkedIn Positioning",
+      "tags": [{ "label": "Career", "type": "ios" }],
+      "ios": ["apply to senior iOS and AI-mobile roles"],
+      "ai": ["prepare SwiftMigrate Agent explanation"],
+      "dsa": ["one timed set"],
+      "exercises": ["apply to 10–15 roles", "update LinkedIn and GitHub profile"],
+      "deliverable": "Resume, LinkedIn, and GitHub ready."
+    },
+    {
+      "day": 30,
+      "title": "Final Review + Active Switch Plan",
+      "tags": [{ "label": "Final", "type": "ios" }],
+      "ios": ["final mock", "gap analysis", "priority revision list"],
+      "ai": ["SwiftMigrate Agent V1 cleanup", "portfolio final polish"],
+      "dsa": ["final mixed revision"],
+      "exercises": ["create next 30-day plan", "schedule mocks/applications"],
+      "deliverable": "Active applications plus next-phase improvement plan."
+    }
+  ],
+  "questions": [
+    {
+      "title": "Swift / iOS Core",
+      "items": [
+        "Explain struct vs class with memory behavior.",
+        "What is ARC and how do retain cycles happen?",
+        "Difference between weak and unowned?",
+        "How do closures capture self?",
+        "What is async/await and why is it better than completion handlers?",
+        "What is MainActor?",
+        "How would you design an API layer with token refresh?",
+        "How do you test a ViewModel?"
+      ]
+    },
+    {
+      "title": "SwiftUI",
+      "items": [
+        "When do you use @State vs @Binding?",
+        "@StateObject vs @ObservedObject?",
+        "When is @EnvironmentObject appropriate?",
+        "How does NavigationStack differ from UINavigationController?",
+        "How do you handle loading/error/success states?",
+        "How do you integrate SwiftUI into UIKit?"
+      ]
+    },
+    {
+      "title": "Architecture",
+      "items": [
+        "Explain MVVM in SwiftUI.",
+        "What belongs in ViewModel vs Service vs Repository?",
+        "When would you add a UseCase layer?",
+        "How does dependency injection improve testability?",
+        "How would you migrate a massive ViewController safely?"
+      ]
+    },
+    {
+      "title": "AI / LLM / RAG / Agents",
+      "items": [
+        "What is an LLM?",
+        "What are tokens and why do they matter?",
+        "What is structured output?",
+        "What is RAG and why not send the whole project to the model?",
+        "What are embeddings and chunking?",
+        "What is an AI agent?",
+        "How would your SwiftMigrate Agent work?",
+        "What are the risks of AI-generated code?"
+      ]
+    }
+  ],
+  "resources": {
+    "summary": "This site is intentionally data-driven. The page layout lives in index.html, styling in style.css, rendering logic in script.js, and all course content in data/crash-course.json.",
+    "items": [
+      "Update data/crash-course.json to change roadmap content without touching layout.",
+      "Use GitHub Pages to host from main branch and /root.",
+      "Keep this repo public if it only contains generic learning content and sample code.",
+      "Do not add company code, client screenshots, internal API URLs, access tokens, or private architecture documents."
+    ],
+    "updateRule": "For future changes, edit only data/crash-course.json unless you want to change the design or rendering behavior."
+  }
+}
